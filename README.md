@@ -1,2 +1,1 @@
-# apache-htaccess-file
-Apache .htaccess File
+# Apache .htaccess File
