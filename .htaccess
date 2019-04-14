@@ -1,14 +1,12 @@
-########################################################################################################################
-################################################### .htaccess ##########################################################
-########################################################################################################################
-# @name            Apache .htaccess File
-# @file            .htaccess
-# @version         1.0.0
-# @description     Apache Configurations
-# @repository      https://github.com/oztasemrecan/apache-htaccess-file
-# @author          Emre Can ÖZTAŞ (ecoztas) <me@emrecanoztas.com>
-# @license         MIT
-########################################################################################################################
+# ==============================================================================
+# NAME            Apache .htaccess File
+# FILE            .htaccess
+# VERSION         1.0.0
+# DESCRIPTION     Apache Configurations
+# REPOSITORY      https://github.com/ecoztas/apache-htaccess-file
+# AUTHOR          Emre Can ÖZTAŞ <me@emrecanoztas.com>
+# LICENSE         MIT
+# ==============================================================================
 
 # =ALLOW MULTIVIEWS
 Options +Multiviews
