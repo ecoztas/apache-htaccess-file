@@ -1,7 +1,7 @@
 # ==============================================================================
 # NAME            Apache .htaccess File
 # FILE            .htaccess
-# VERSION         1.0.0
+# VERSION         1.0.1
 # DESCRIPTION     Apache Configurations
 # REPOSITORY      https://github.com/ecoztas/apache-htaccess-file
 # AUTHOR          Emre Can ÖZTAŞ <me@emrecanoztas.com>
@@ -26,6 +26,14 @@ DirectoryIndex index.html index.htm index.php
 #     RewriteCond %{HTTPS} !=on
 #     RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
 #     RewriteRule ^ %{ENV:PROTO}://%1%{REQUEST_URI} [R=301,L]
+# </IfModule>
+
+# =ALL REQUEST TO index.php
+# <IfModule mod_rewrite.c>
+#    RewriteEngine On
+#    RewriteCond %{REQUEST_FILENAME} !-f
+#    RewriteCond %{REQUEST_FILENAME} !-d
+#    RewriteRule ^(.*)$ index.php?file=$1 [NC,L,QSA]
 # </IfModule>
 
 # =REMOVE CODEIGNITER index.php
